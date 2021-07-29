@@ -17,12 +17,8 @@ properties([
 						classpath: [], 
 						sandbox: true, 
 						script: 
-							'''return {
-								"PROD"
-								"QA"
-								"DEV"
-								}'''
-							]
+							'''return ["PROD","QA","DEV"]'''
+					]
 				]
 			], 
 			[$class: 'CascadeChoiceParameter', 
