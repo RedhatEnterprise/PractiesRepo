@@ -1,26 +1,24 @@
 properties([
-	parameters([[
-		$class: 'PT_SINGLE_SELECT', 
-			choiceType: 'PT_CHECKBOX', 
+		parameters([
+			[$class: 'ChoiceParameter', 
+			choiceType: 'PT_SINGLE_SELECT',
 			filterLength: 1, 
 			filterable: false, 
 			name: 'Env', 
-			randomName: 'choice-parameter-16065095693972', 
-			script: [
-				$class: 'GroovyScript', 
-				fallbackScript: [
-					classpath: [], 
-					sandbox: false, 
-					script: 
-					'return { "Please Select Env" }'], 
-					script: [
-						classpath: [], 
-						sandbox: true, 
-						script: 
-							'''return ["PROD","QA","DEV"]'''
-					]
+			randomName: 'choice-parameter-17420628652913', 
+			script: 
+				[$class: 'GroovyScript', 
+					fallbackScript: 
+						[classpath: [], 
+						sandbox: false, 
+						script: ''], 
+							script: 
+								[classpath: [], 
+								sandbox: true, 
+								script: 'return [ "PROD", "QA", "DEV" ]'
+						]
 				]
-			], 
+			],
 			[$class: 'CascadeChoiceParameter', 
 				choiceType: 'PT_SINGLE_SELECT', 
 				filterLength: 1, filterable: false,
