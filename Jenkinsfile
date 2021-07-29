@@ -1,6 +1,6 @@
 properties([
 	parameters([[
-		$class: 'ChoiceParameter', 
+		$class: 'PT_SINGLE_SELECT', 
 			choiceType: 'PT_CHECKBOX', 
 			filterLength: 1, 
 			filterable: false, 
