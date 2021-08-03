@@ -1,3 +1,1 @@
-if (env.equals("prod")){
-return ["prod1", "prod2"]
-}
+return ["PRD", "QA", "DEV"]
