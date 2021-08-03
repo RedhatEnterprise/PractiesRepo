@@ -1,3 +1,3 @@
-if ((region.equals("US")) || (region.equals("CANADA"))) {
+if((region.equals("US"))  || (region.equals("CANADA"))){
 return ["GMR", "PRG"]
 }
