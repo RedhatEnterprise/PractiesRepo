@@ -1,1 +1,3 @@
-return ["PRD", "QA", "DEV"]
+def getThingList() {
+    return ["thing","thin2","thing3"]
+}
