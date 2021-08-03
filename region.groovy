@@ -1,1 +1,1 @@
-return ["US", "CANADA", "EUROPE"]
+return [" ", "US", "CANADA", "EUROPE"]
