@@ -1,3 +1,3 @@
-def getThingList() {
-    return ["thing","thin2","thing3"]
+def myUtilityMethod(String msg) {
+    println "myUtilityMethod running with: ${msg}"
 }
