@@ -1,3 +1,1 @@
-def myUtilityMethod(String msg) {
-    println "myUtilityMethod running with: ${msg}"
-}
+return["dev", "qa", "prod"]
